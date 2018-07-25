@@ -3,5 +3,5 @@
 README.md:
 	echo '**Guessing Game Program**  ' > README.md
 	date >> README.md
-	echo '  '
+	echo '  ' >> README.md
 	wc -l guessinggame.sh >> README.md
