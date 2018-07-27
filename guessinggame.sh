@@ -1,15 +1,15 @@
 #!/usr/bin/env bash 
 #Simple guessing game program
 
-user_guess=ls | wc -l
-success= 0
+num_files=($(ls | wc -l))
+success=0
 
 guess () {
   
-  if [[ $1 -lt user_guess ]]
+  if [[ $1 -lt num_files ]]
   then
 	echo "Too low! Try a larger number"
-  elif [[ $1 -gt user_guess ]]
+  elif [[ $1 -gt num_files ]]
   then
 	echo "Too high! Try a smaller number"
   else
